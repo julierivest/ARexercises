@@ -1,5 +1,25 @@
 require_relative '../setup'
 
+b = Store.create(
+  name: "Burnaby",
+  annual_revenue: 300000,
+  womens_apparel: true,
+  mens_apparel: true)
+
+r = Store.create(
+  name: "Richmond",
+  annual_revenue: 1260000,
+  womens_apparel: true,
+  mens_apparel: false)
+
+g = Store.create(
+  name: "Gastown",
+  annual_revenue: 190000,
+  womens_apparel: false,
+  mens_apparel: true)
+
+puts Store.count
+
 puts "Exercise 1"
 puts "----------"
 
